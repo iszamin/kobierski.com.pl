@@ -1,1 +1,14 @@
-theme: jekyll-theme-time-machine
+include:
+  - _pages
+
+markdown: kramdown
+
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
