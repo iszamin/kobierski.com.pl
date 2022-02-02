@@ -28,11 +28,13 @@
         <div class="pages">
           <ul class="pages-list">
             {% for page in site.pages %}
+              {% unless page.title == "Home" %}
               <li class="page-link">
                 <a class="page-title" href="{{ page.url }}">
                   {{ page.title }}
                 </a>
               </li>
+              {% endunless %}
             {% endfor %}
           </ul>
         </div>
