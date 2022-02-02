@@ -6,9 +6,11 @@
         <div id="cover-photo-container">
             <img id="cover-photo" src="/images/{{ page.cover }}">
         </div>
+        {% unless page.title == "Home" %}
         <div id="info-container">
             <h1 id="title">{{ page.title }}</h1>
         </div>
+        {% endunless %}
     </div>
 
     <div class="page">
